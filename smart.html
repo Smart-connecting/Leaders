@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Connecting</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .header {
+            background: url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGludGVybmV0JTIwY29ubmVjdGlvbnxlbnwwfHx8fDE2MzA1ODQ0ODA&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
+            height: 100vh;
+            position: relative;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .header-content h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .header-content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .about,
+        .services,
+        .contact,
+        .counters,
+        .speed-test,
+        .testimonials,
+        .order {
+            padding: 60px 0;
+        }
+
+        .about-img img,
+        .service-box img {
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .service-box h3 {
+            margin-top: 15px;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 25px;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1ebea5;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">👑Smart Connecting</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#counters">Statistiques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#speed-test">Test de rapidité</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Témoignages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#order">Commandez Maintenant</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content text-center" data-aos="fade-up">
+            <h1>Connexion Internet Rapide et Sécurisée</h1>
+            <p>Illimitée, fiable et rapide, pour toutes vos connexions</p>
+            <a href="#about" class="btn btn-primary">En savoir plus</a>
+        </div>
+    </header>
+
+    <section id="about" class="about py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 about-img" data-aos="fade-right">
+                    <img src="test.jpg" alt="À propos de nous" class="img-fluid">
+                </div>
+                <div class="col-lg-6 about-content" data-aos="fade-left">
+                    <h2>À propos de Smart Connecting</h2>
+                    <p>Chez Smart Connecting, nous offrons des solutions de connexion internet rapide, sécurisée et illimitée pour répondre à tous vos besoins. Notre mission est de garantir une expérience de navigation fluide et sans interruption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Nos Services</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-box text-center">
+                        <i class="fas fa-bolt fa-3x mb-3"></i>
+                        <h3>Connexion Internet Rapide</h3>
+                        <p>Profitez d'une vitesse de connexion inégalée pour toutes vos activités en ligne.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-box text-center">
+                        <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                        <h3>Sécurité Avancée</h3>
+                        <p>Protégez vos données avec nos solutions de sécurité internet de pointe.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-box text-center">
+                        <i class="fas fa-infinity fa-3x mb-3"></i>
+                        <h3>Connexion Illimitée</h3>
+                        <p>Connectez-vous sans limites avec notre service internet illimité.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="counters" class="counters py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Nos Statistiques</h2>
+            <div class="row">
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-users fa-3x mb-3"></i>
+                    <h3>Clients Satisfaits</h3>
+                    <span id="counter1" class="d-block" style="font-size: 2rem;">0</span>
+                </div>
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-network-wired fa-3x mb-3"></i>
+                    <h3>Connexions Actives</h3>
+                    <span id="counter2" class="d-block" style="font-size: 2rem;">0</span>
+                </div>
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                    <h3>Projets Sécurisés</h3>
+                    <span id="counter3" class="d-block" style="font-size: 2rem;">0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="speed-test" class="speed-test py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Test de Rapidité</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Témoignages de Clients Satisfaits</h2>
+            <div id="carouselTestimonials" class="carousel slide" data-ride="carousel" data-aos="fade-up" data-aos-delay="100">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselTestimonials" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselTestimonials" data-slide-to="1"></li>
+                    <li data-target="#carouselTestimonials" data-slide-to="2"></li>
+                    <li data-target="#carouselTestimonials" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img2.jpg" class="d-block w-100" alt="Témoignage 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img1.jpg" class="d-block w-100" alt="Témoignage 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img3.jpg" class="d-block w-100" alt="Témoignage 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img3.jpg" class="d-block w-100" alt="Témoignage 4">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselTestimonials" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Précédent</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselTestimonials" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Suivant</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Commandez Maintenant</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Connexion Standard</h3>
+                            <p class="card-text">Vitesse : 50 Mbps</p>
+                            <p class="card-text">Prix : 30€/mois</p>
+                            <a href="#" class="btn btn-primary">Commander 🛒</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Connexion Avancée</h3>
+                            <p class="card-text">Vitesse : 100 Mbps</p>
+                            <p class="card-text">Prix : 50€/mois</p>
+                            <a href="#" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Connexion Premium</h3>
+                            <p class="card-text">Vitesse : 200 Mbps</p>
+                            <p class="card-text">Prix : 80€/mois</p>
+                            <a href="#" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Contactez-nous</h2>
+            <form action="https://formspree.io/f/mnqldpnq" method="POST" data-aos="fade-up">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2023 Smart Connecting. Tous droits réservés.</p>
+    </footer>
+
+    <a href="https://wa.me/237693536353" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize AOS (Animate On Scroll)
+            AOS.init({
+                duration: 1000,
+                once: true,
+            });
+
+            // Initialize CountUp.js
+            const options = {
+                duration: 2,
+                separator: ',',
+            };
+
+            const counter1 = new CountUp('counter1', 5000, options);
+            const counter2 = new CountUp('counter2', 1200, options);
+            const counter3 = new CountUp('counter3', 300, options);
+
+            function startCounters() {
+                if (!counter1.error) {
+                    counter1.start();
+                } else {
+                    console.error(counter1.error);
+                }
+
+                if (!counter2.error) {
+                    counter2.start();
+                } else {
+                    console.error(counter2.error);
+                }
+
+                if (!counter3.error) {
+                    counter3.start();
+                } else {
+                    console.error(counter3.error);
+                }
+            }
+
+            // Start counters when the section is in view
+            let countersSection = document.querySelector('#counters');
+            let optionsObserver = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+
+            let observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, optionsObserver);
+
+            observer.observe(countersSection);
+        });
+    </script>
+</body>
+
+</html>
